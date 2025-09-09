@@ -1,14 +1,15 @@
 import React from 'react';
-
+// Import images using Vite's import syntax
+import logo from '../../public/assets/Images/LogoPng.png';
+import waterDrop from '../../public/assets/Images/water-drop.png';
+import heroImage from '../../public/assets/Images/HeroSection-IMG02.png';
 
 const HeroSection = () => {
-
-
   return (
     <section id="home" className="hero">
       <nav aria-label="Primary">
         <div className="logo">
-          <img src="/assets/Images/LogoPng.png" alt="Logo" />
+          <img src={logo} alt="Logo" />
         </div>
 
         <ul className="nav-links">
@@ -29,7 +30,7 @@ const HeroSection = () => {
       <div className="hero-content">
         <div className="hero-text">
           <div className="we-give">
-            <img src="/assets/Images/water-drop.png" alt="Water Drop Icon" className="water-drop-icon" />
+            <img src={waterDrop} alt="Water Drop Icon" className="water-drop-icon" />
             <span>We Give</span>
           </div>
           <h1>
@@ -44,7 +45,7 @@ const HeroSection = () => {
         </div>
 
         <div className="hero-image">
-          <img src="/assets/Images/HeroSection-IMG02.png" alt="Cleaning Service" />
+          <img src={heroImage} alt="Cleaning Service" />
           <div className="tags">
             <span className="tag" id="tag1">
               <i className="fas fa-home"></i> Apartment Cleaning

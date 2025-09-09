@@ -1,4 +1,8 @@
 import React from 'react';
+// Import service images
+import serviceImg1 from '../../public/assets/Images/Service-IMG01.png';
+import serviceImg2 from '../../public/assets/Images/Service-IMG02.png';
+import serviceImg3 from '../../public/assets/Images/Service-IMG03.png';
 
 const ServicesSection = () => {
 
@@ -21,7 +25,7 @@ const ServicesSection = () => {
         {/* Service 1 */}
         <div className="service-card">
           <div className="service-card-image">
-            <img src="/assets/Images/Service-IMG01.png" alt="Home Cleaning" />
+            <img src={serviceImg1} alt="Home Cleaning" />
           </div>
           <div className="service-card-content">
             <h3>Home Cleaning</h3>
@@ -36,7 +40,7 @@ const ServicesSection = () => {
         {/* Service 2 */}
         <div className="service-card">
           <div className="service-card-image">
-            <img src="/assets/Images/Service-IMG02.png" alt="Office Cleaning" />
+            <img src={serviceImg2} alt="Office Cleaning" />
           </div>
           <div className="service-card-content">
             <h3>Office Cleaning</h3>
@@ -51,7 +55,7 @@ const ServicesSection = () => {
         {/* Service 3 */}
         <div className="service-card">
           <div className="service-card-image">
-            <img src="/assets/Images/Service-IMG03.png" alt="Waste Disposal" />
+            <img src={serviceImg3} alt="Window Cleaning" />
           </div>
           <div className="service-card-content">
             <h3>Waste Disposal</h3>

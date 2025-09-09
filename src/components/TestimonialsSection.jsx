@@ -1,4 +1,5 @@
 import React from 'react';
+import testimonialImg from '../../public/assets/Images/Review-IMG02.png';
 
 const TestimonialsSection = () => {
 
@@ -26,7 +27,7 @@ const TestimonialsSection = () => {
         <figure className="t-card">
           <img
             className="t-card__img"
-            src="/assets/Images/Review-IMG02.png"
+            src={testimonialImg}
             alt="Photo of customer John Immanuel"
           />
           <span className="t-quote">

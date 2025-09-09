@@ -1,4 +1,5 @@
 import React from "react";
+import footerLogo from '../../public/assets/Images/WhiteLogo-footer-.png';
 
 const FooterSection = () => {
 
@@ -9,7 +10,7 @@ const FooterSection = () => {
           <div className="brand-row">
             <img
               className="brand-logo"
-              src="/assets/Images/WhiteLogo-footer-.png"
+              src={footerLogo}
               alt="Timireinigung logo"
             />
             <span className="brand-name">Timireinigung</span>

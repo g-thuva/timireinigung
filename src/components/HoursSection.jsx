@@ -1,4 +1,5 @@
 import React from "react";
+import timeImage from '../../public/assets/Images/time.png';
 
 const HoursSection = () => {
 
@@ -6,7 +7,7 @@ const HoursSection = () => {
     <section id="hours" className="hours">
       <div className="hours__inner container">
         <div className="hours__art" aria-hidden="true">
-          <img src="/assets/Images/time.png" alt="" width="720" height="720" />
+          <img src={timeImage} alt="" width="720" height="720" />
         </div>
 
         <div className="hours__content">

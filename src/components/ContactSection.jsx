@@ -1,4 +1,5 @@
 import React from "react";
+import contactImage from '../../public/assets/Images/ContactUs-IMG.png';
 
 const ContactSection = () => {
 
@@ -39,9 +40,9 @@ const ContactSection = () => {
 
       <div className="container contact__body">
         <div className="contact__image">
-          <img
-            src="/assets/Images/ContactUs-IMG.png"
-            alt="Smiling cleaner holding tools"
+          <img 
+            src={contactImage} 
+            alt="Contact us illustration" 
           />
         </div>
 

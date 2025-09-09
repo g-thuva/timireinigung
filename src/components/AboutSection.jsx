@@ -1,4 +1,5 @@
 import React from 'react';
+import aboutImage from '../../public/assets/Images/AboutUsSection-IMG.png';
 
 const AboutSection = () => {
   return (
@@ -6,7 +7,7 @@ const AboutSection = () => {
       <div className="about-us-content">
         <div className="about-image">
           <img 
-            src="/assets/Images/AboutUsSection-IMG.png" 
+            src={aboutImage} 
             alt="Professional Cleaning Service" 
           />
         </div>

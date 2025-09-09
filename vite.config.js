@@ -1,9 +1,25 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-
-const isProd = process.env.NODE_ENV === 'production' || process.env.GITHUB_ACTIONS
+import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
-  base: isProd ? '/timireinigung/' : '/',  // ✅ works locally & on Pages
+  base: process.env.NODE_ENV === 'production' ? '/timireinigung/' : '/',
+  
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
+  
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    emptyOutDir: true,
+  },
+  
+  server: {
+    port: 3000,
+    open: true,
+  },
 })
