@@ -1,8 +1,8 @@
 import React from 'react';
 // Import service images
-import serviceImg1 from '../../public/assets/Images/Service-IMG01.png';
-import serviceImg2 from '../../public/assets/Images/Service-IMG02.png';
-import serviceImg3 from '../../public/assets/Images/Service-IMG03.png';
+import serviceImg1 from '/assets/Images/Service-IMG01.png';
+import serviceImg2 from '/assets/Images/Service-IMG02.png';
+import serviceImg3 from '/assets/Images/Service-IMG03.png';
 
 const ServicesSection = () => {
 

@@ -1,8 +1,8 @@
 import React from 'react';
-// Import images using Vite's import syntax
-import logo from '../../public/assets/Images/LogoPng.png';
-import waterDrop from '../../public/assets/Images/water-drop.png';
-import heroImage from '../../public/assets/Images/HeroSection-IMG02.png';
+// Image paths in public directory
+const logo = '/assets/Images/LogoPng.png';
+const waterDrop = '/assets/Images/water-drop.png';
+const heroImage = '/assets/Images/HeroSection-IMG02.png';
 
 const HeroSection = () => {
   return (

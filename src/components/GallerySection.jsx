@@ -1,11 +1,11 @@
 import React from 'react';
 // Import gallery images
-import img01 from '../../public/assets/Images/Gallery-IMG01.png';
-import img02 from '../../public/assets/Images/Gallery-IMG02.png';
-import img03 from '../../public/assets/Images/Gallery-IMG03.png';
-import img04 from '../../public/assets/Images/Gallery-IMG04.png';
-import img05 from '../../public/assets/Images/Gallery-IMG05.png';
-import img06 from '../../public/assets/Images/Gallery-IMG06.png';
+import img01 from '/assets/Images/Gallery-IMG01.png';
+import img02 from '/assets/Images/Gallery-IMG02.png';
+import img03 from '/assets/Images/Gallery-IMG03.png';
+import img04 from '/assets/Images/Gallery-IMG04.png';
+import img05 from '/assets/Images/Gallery-IMG05.png';
+import img06 from '/assets/Images/Gallery-IMG06.png';
 
 const GallerySection = () => {
 

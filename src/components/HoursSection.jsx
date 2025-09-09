@@ -1,5 +1,5 @@
 import React from "react";
-import timeImage from '../../public/assets/Images/time.png';
+import timeImage from '/assets/Images/time.png';
 
 const HoursSection = () => {
 
