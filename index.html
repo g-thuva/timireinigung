@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>timireinigung</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+  <!-- Hidden Google Translate element -->
+<div id="google_translate_element"></div>
+
+<!-- Custom button with Google Translate logo -->
+<button id="translate-btn" title="Translate this page">
+  <img src="https://www.gstatic.com/images/branding/product/2x/translate_48dp.png" alt="Translate" />
+</button>
+
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {
+        pageLanguage: 'en',
+        includedLanguages: 'en,ta,si,fr,de,es', // add any you want
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      },
+      'google_translate_element'
+    );
+  }
+
+  // Toggle dropdown on logo click
+  document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("translate-btn").addEventListener("click", function () {
+      var combo = document.querySelector("select.goog-te-combo");
+      if (combo) {
+        combo.style.display = combo.style.display === "block" ? "none" : "block";
+        combo.style.position = "fixed";
+        combo.style.top = "60px";
+        combo.style.right = "10px";
+        combo.style.zIndex = "10000";
+      }
+    });
+  });
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit&hl=en"></script>
+
+</body>
+
+</html>
