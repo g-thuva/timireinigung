@@ -1,8 +1,8 @@
 import React from 'react';
 // Image paths in public directory
-const logo = '/assets/Images/LogoPng.png';
-const waterDrop = '/assets/Images/water-drop.png';
-const heroImage = '/assets/Images/HeroSection-IMG02.png';
+const logo = `${import.meta.env.BASE_URL}assets/Images/LogoPng.png`;
+const waterDrop = `${import.meta.env.BASE_URL}assets/Images/water-drop.png`;
+const heroImage = `${import.meta.env.BASE_URL}assets/Images/HeroSection-IMG02.png`;
 
 const HeroSection = () => {
   return (

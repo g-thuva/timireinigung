@@ -1,5 +1,5 @@
 import React from 'react';
-import testimonialImg from '/assets/Images/Review-IMG02.png';
+const testimonialImg = `${import.meta.env.BASE_URL}assets/Images/Review-IMG02.png`;
 
 const TestimonialsSection = () => {
 

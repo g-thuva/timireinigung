@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutImage from '/assets/Images/AboutUsSection-IMG.png';
+const aboutImage = `${import.meta.env.BASE_URL}assets/Images/AboutUsSection-IMG.png`;
 
 const AboutSection = () => {
   return (

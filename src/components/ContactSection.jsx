@@ -1,5 +1,5 @@
 import React from "react";
-import contactImage from '/assets/Images/ContactUs-IMG.png';
+const contactImage = `${import.meta.env.BASE_URL}assets/Images/ContactUs-IMG.png`;
 
 const ContactSection = () => {
 

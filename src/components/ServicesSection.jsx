@@ -1,8 +1,8 @@
 import React from 'react';
-// Import service images
-import serviceImg1 from '/assets/Images/Service-IMG01.png';
-import serviceImg2 from '/assets/Images/Service-IMG02.png';
-import serviceImg3 from '/assets/Images/Service-IMG03.png';
+// Image paths in public directory using BASE_URL for GitHub Pages
+const serviceImg1 = `${import.meta.env.BASE_URL}assets/Images/Service-IMG01.png`;
+const serviceImg2 = `${import.meta.env.BASE_URL}assets/Images/Service-IMG02.png`;
+const serviceImg3 = `${import.meta.env.BASE_URL}assets/Images/Service-IMG03.png`;
 
 const ServicesSection = () => {
 
