@@ -12,43 +12,89 @@
 <body>
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
-  <!-- Hidden Google Translate element -->
-<div id="google_translate_element"></div>
+<!-- ───────── Google Translate: Icon + Official Dropdown (Reliable) ───────── -->
+<style>
+  /* Icon button */
+  #gt-btn {
+    position: fixed; top: 10px; right: 10px; z-index: 9999;
+    background: none; border: 0; padding: 0; cursor: pointer; line-height: 0;
+  }
+  #gt-btn img { width: 40px; height: auto; display: block; }
 
-<!-- Custom button with Google Translate logo -->
-<button id="translate-btn" title="Translate this page">
-  <img src="https://www.gstatic.com/images/branding/product/2x/translate_48dp.png" alt="Translate" />
+  /* Popup holding the official widget */
+  #gt-container {
+    position: fixed; top: 60px; right: 10px; z-index: 10000;
+    background: #fff; padding: 8px; border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,.18); min-width: 240px;
+    opacity: 0; visibility: hidden; pointer-events: none; transform: translateY(-6px);
+    transition: all .18s ease;
+  }
+  #gt-container.open {
+    opacity: 1; visibility: visible; pointer-events: auto; transform: translateY(0);
+  }
+
+  /* Hide Google’s top banner bar */
+  .goog-te-banner-frame.skiptranslate { display: none !important; }
+  body { top: 0 !important; }
+</style>
+
+<!-- Icon button -->
+<button id="gt-btn" aria-label="Translate this page" title="Translate this page">
+  <img src="https://www.gstatic.com/images/branding/product/2x/translate_48dp.png" alt="Translate">
 </button>
 
-<script type="text/javascript">
+<!-- Popup with official widget target -->
+<div id="gt-container">
+  <div id="google_translate_element"></div>
+</div>
+
+<script>
+  // 1) Init the official widget into #google_translate_element
   function googleTranslateElementInit() {
+    if (window.__gtReady) return;
     new google.translate.TranslateElement(
       {
         pageLanguage: 'en',
-        includedLanguages: 'en,ta,si,fr,de,es', // add any you want
-        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        includedLanguages: 'en,ta,de,fr,it,es', // add/remove as you need
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay: false
       },
       'google_translate_element'
     );
+    window.__gtReady = true;
   }
 
-  // Toggle dropdown on logo click
-  document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("translate-btn").addEventListener("click", function () {
-      var combo = document.querySelector("select.goog-te-combo");
-      if (combo) {
-        combo.style.display = combo.style.display === "block" ? "none" : "block";
-        combo.style.position = "fixed";
-        combo.style.top = "60px";
-        combo.style.right = "10px";
-        combo.style.zIndex = "10000";
+  // 2) Load Google script once, force English UI
+  (function () {
+    if (document.querySelector('script[src*="translate_a/element.js"]')) return;
+    var s = document.createElement('script');
+    s.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit&hl=en';
+    document.body.appendChild(s);
+  })();
+
+  // 3) Toggle the popup — user will use the official dropdown inside it
+  document.addEventListener('DOMContentLoaded', function () {
+    const btn = document.getElementById('gt-btn');
+    const box = document.getElementById('gt-container');
+
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      // ensure widget init has run (safe to call again)
+      if (typeof window.googleTranslateElementInit === 'function') {
+        try { window.googleTranslateElementInit(); } catch(_) {}
+      }
+      box.classList.toggle('open');
+    });
+
+    // click outside to close
+    document.addEventListener('click', (e) => {
+      if (box.classList.contains('open') && !box.contains(e.target) && e.target !== btn && !btn.contains(e.target)) {
+        box.classList.remove('open');
       }
     });
   });
 </script>
-
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit&hl=en"></script>
-
+<!-- ───────────────────────────────────────────────────────────────────────── -->
 </body>
 
 </html>

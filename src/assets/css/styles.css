@@ -17,28 +17,6 @@ body {
     scroll-behavior: smooth;
 }
 
-#google_translate_element {
-    height: 0;
-    overflow: hidden;
-  }
-
-  /* Our custom button */
-  #translate-btn {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 9999;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-  }
-
-  #translate-btn img {
-    width: 40px; /* adjust size */
-    height: auto;
-  }
-
 img,
 picture,
 video,
