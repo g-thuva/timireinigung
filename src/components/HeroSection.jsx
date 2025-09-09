@@ -8,7 +8,7 @@ const HeroSection = () => {
     <section id="home" className="hero">
       <nav aria-label="Primary">
         <div className="logo">
-          <img src="../public/assets/images/LogoPng.png" alt="Logo" />
+          <img src="/assets/Images/LogoPng.png" alt="Logo" />
         </div>
 
         <ul className="nav-links">
@@ -29,7 +29,7 @@ const HeroSection = () => {
       <div className="hero-content">
         <div className="hero-text">
           <div className="we-give">
-            <img src="../public/assets/images/water-drop.png" alt="Water Drop Icon" className="water-drop-icon" />
+            <img src="/assets/Images/water-drop.png" alt="Water Drop Icon" className="water-drop-icon" />
             <span>We Give</span>
           </div>
           <h1>
@@ -44,7 +44,7 @@ const HeroSection = () => {
         </div>
 
         <div className="hero-image">
-          <img src="../public/assets/images/HeroSection-IMG02.png" alt="Cleaning Service" />
+          <img src="/assets/Images/HeroSection-IMG02.png" alt="Cleaning Service" />
           <div className="tags">
             <span className="tag" id="tag1">
               <i className="fas fa-home"></i> Apartment Cleaning

@@ -6,7 +6,7 @@ const HoursSection = () => {
     <section id="hours" className="hours">
       <div className="hours__inner container">
         <div className="hours__art" aria-hidden="true">
-          <img src="../public/assets/images/time.png" alt="" width="720" height="720" />
+          <img src="/assets/Images/time.png" alt="" width="720" height="720" />
         </div>
 
         <div className="hours__content">

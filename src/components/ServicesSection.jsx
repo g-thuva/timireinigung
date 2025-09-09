@@ -21,7 +21,7 @@ const ServicesSection = () => {
         {/* Service 1 */}
         <div className="service-card">
           <div className="service-card-image">
-            <img src="../public/assets/images/Service-IMG01.png" alt="Home Cleaning" />
+            <img src="/assets/Images/Service-IMG01.png" alt="Home Cleaning" />
           </div>
           <div className="service-card-content">
             <h3>Home Cleaning</h3>
@@ -36,7 +36,7 @@ const ServicesSection = () => {
         {/* Service 2 */}
         <div className="service-card">
           <div className="service-card-image">
-            <img src="../public/assets/images/Service-IMG02.png" alt="Office Cleaning" />
+            <img src="/assets/Images/Service-IMG02.png" alt="Office Cleaning" />
           </div>
           <div className="service-card-content">
             <h3>Office Cleaning</h3>
@@ -51,7 +51,7 @@ const ServicesSection = () => {
         {/* Service 3 */}
         <div className="service-card">
           <div className="service-card-image">
-            <img src="../public/assets/images/Service-IMG03.png" alt="Waste Disposal" />
+            <img src="/assets/Images/Service-IMG03.png" alt="Waste Disposal" />
           </div>
           <div className="service-card-content">
             <h3>Waste Disposal</h3>

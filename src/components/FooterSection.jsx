@@ -9,7 +9,7 @@ const FooterSection = () => {
           <div className="brand-row">
             <img
               className="brand-logo"
-              src="../public/assets/images/WhiteLogo-footer-.png"
+              src="/assets/Images/WhiteLogo-footer-.png"
               alt="Timireinigung logo"
             />
             <span className="brand-name">Timireinigung</span>

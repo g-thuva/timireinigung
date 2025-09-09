@@ -40,7 +40,7 @@ const ContactSection = () => {
       <div className="container contact__body">
         <div className="contact__image">
           <img
-            src="../public/assets/images/ContactUs-IMG.png"
+            src="/assets/Images/ContactUs-IMG.png"
             alt="Smiling cleaner holding tools"
           />
         </div>

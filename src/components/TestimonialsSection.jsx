@@ -26,7 +26,7 @@ const TestimonialsSection = () => {
         <figure className="t-card">
           <img
             className="t-card__img"
-            src="../public/assets/images/Review-IMG01.png"
+            src="/assets/Images/Review-IMG02.png"
             alt="Photo of customer John Immanuel"
           />
           <span className="t-quote">

@@ -15,26 +15,26 @@ const GallerySection = () => {
       <div className="g-row g-row--rtl">
         <div className="g-track">
           <figure className="g-item">
-            <img src="../public/assets/images/Gallery-IMG01.png" alt="Team member in company van" loading="lazy" />
+            <img src="/assets/Images/Gallery-IMG01.png" alt="Team member in company van" loading="lazy" />
           </figure>
           <figure className="g-item">
-            <img src="../public/assets/images/Gallery-IMG02.png" alt="Floor polishing machine" loading="lazy" />
+            <img src="/assets/Images/Gallery-IMG02.png" alt="Floor polishing machine" loading="lazy" />
           </figure>
           <figure className="g-item">
-            <img src="../public/assets/images/Gallery-IMG03.png" alt="Construction dust cleaning" loading="lazy" />
+            <img src="/assets/Images/Gallery-IMG03.png" alt="Construction dust cleaning" loading="lazy" />
           </figure>
         </div>
       </div>
       <div className="g-row g-row--ltr">
         <div className="g-track">
           <figure className="g-item">
-            <img src="../public/assets/images/Gallery-IMG04.png" alt="Garden maintenance" loading="lazy" />
+            <img src="/assets/Images/Gallery-IMG04.png" alt="Garden maintenance" loading="lazy" />
           </figure>
           <figure className="g-item">
-            <img src="../public/assets/images/Gallery-IMG05.png" alt="Kitchen and tiles cleaning" loading="lazy" />
+            <img src="/assets/Images/Gallery-IMG05.png" alt="Kitchen and tiles cleaning" loading="lazy" />
           </figure>
           <figure className="g-item">
-            <img src="../public/assets/images/Gallery-IMG06.png" alt="Company fleet near job site" loading="lazy" />
+            <img src="/assets/Images/Gallery-IMG06.png" alt="Company fleet near job site" loading="lazy" />
           </figure>
         </div>
       </div>

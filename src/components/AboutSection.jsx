@@ -6,7 +6,7 @@ const AboutSection = () => {
       <div className="about-us-content">
         <div className="about-image">
           <img 
-            src="../public/assets/images/AboutUsSection-IMG.png" 
+            src="/assets/Images/AboutUsSection-IMG.png" 
             alt="Professional Cleaning Service" 
           />
         </div>
