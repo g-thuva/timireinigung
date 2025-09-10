@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 // Image paths in public directory
 const logo = `${import.meta.env.BASE_URL}assets/Images/LogoPng.png`;
 const waterDrop = `${import.meta.env.BASE_URL}assets/Images/water-drop.png`;
@@ -15,7 +16,7 @@ const HeroSection = () => {
         <ul className="nav-links">
           <li><a href="#home" className="active" aria-current="page">Home</a></li>
           <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Services</a></li>
+          <li><Link to="/services">Services</Link></li>
           <li><a href="#gallery">Gallery</a></li>
         </ul>
 

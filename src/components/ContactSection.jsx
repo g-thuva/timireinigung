@@ -14,27 +14,34 @@ const ContactSection = () => {
         <p className="contact__lead">Got a mess? Let us know! Choose a time from our schedule and we’ll be there for a quick and clean fix.</p>
 
         <div className="chips">
-          <div className="chip">
+          <a className="chip" href="tel:+49792507626" aria-label="Call us" style={{ textDecoration: 'none', color: 'inherit' }}>
             <span className="chip__icon"><i className="fas fa-phone"></i></span>
             <div className="chip__text">
               <span className="chip__label">Phone</span>
               <span className="chip__value">+49 79 250 76 26</span>
             </div>
-          </div>
-          <div className="chip">
+          </a>
+          <a className="chip" href="mailto:timireinigung@bluewin.ch" aria-label="Email us" style={{ textDecoration: 'none', color: 'inherit' }}>
             <span className="chip__icon"><i className="far fa-envelope"></i></span>
             <div className="chip__text">
               <span className="chip__label">E-Mail</span>
               <span className="chip__value">timireinigung@bluewin.ch</span>
             </div>
-          </div>
-          <div className="chip">
+          </a>
+          <a
+            className="chip"
+            href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('Timi Cleaning GmbH, Benzeweg 53A 8222 Beringen')}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open address in Google Maps"
+            style={{ textDecoration: 'none', color: 'inherit' }}
+          >
             <span className="chip__icon"><i className="fas fa-map-marker-alt"></i></span>
             <div className="chip__text">
               <span className="chip__label">Address</span>
               <span className="chip__value">Timi Cleaning GmbH, Benzeweg 53A 8222 Beringen</span>
             </div>
-          </div>
+          </a>
         </div>
       </div>
 

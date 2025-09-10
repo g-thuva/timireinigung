@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 // Image paths in public directory using BASE_URL for GitHub Pages
 const serviceImg1 = `${import.meta.env.BASE_URL}assets/Images/Service-IMG01.png`;
 const serviceImg2 = `${import.meta.env.BASE_URL}assets/Images/Service-IMG02.png`;
@@ -15,10 +16,10 @@ const ServicesSection = () => {
         </div>
         <h2 className="s-title">We Always Provide The<br />Best Service</h2>
         <p className="s-lead">We offer a wide range of cleaning and maintenance services of all kinds. We are happy to provide professional advice.</p>
-        <a href="#services" className="s-cta">
-          Explore All
+        <Link to="/services" className="s-cta">
+          Explore Services
           <span className="s-cta__ico"><i className="fas fa-arrow-up-right"></i></span>
-        </a>
+        </Link>
       </div>
 
       <div className="services-cards" aria-label="Service cards">
